@@ -1589,6 +1589,24 @@ section[id] {
   margin-right: auto;
 }
 
+.projects-swipe-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-family: var(--font-headings);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  margin-top: -2.5rem;
+  text-align: center;
+}
+
+.projects-swipe-hint .hint-accent {
+  color: var(--accent-theme);
+  font-weight: 600;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1811,6 +1829,10 @@ section[id] {
 
 /* Mobile project carousel */
 @media (max-width: 768px) {
+  .projects-swipe-hint {
+    display: flex;
+  }
+
   .projects-grid {
     display: flex;
     grid-template-columns: none;
