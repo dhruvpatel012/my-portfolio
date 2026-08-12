@@ -1,12 +1,12 @@
-# Dhruv Patel | Developer Portfolio 🚀
+# Dhruv Patel | Developer Portfolio
 
 A modern, responsive, dark-mode developer portfolio showcasing web interfaces, frontend skills, and featured projects. Built with vanilla HTML, CSS, JavaScript, GSAP animations, Lenis smooth scroll, and HTML5 Canvas.
 
-🌐 **Live Demo:** [https://my-portfolio-fd.vercel.app/](https://my-portfolio-fd.vercel.app/)
+**Live Demo:** [https://my-portfolio-fd.vercel.app/](https://my-portfolio-fd.vercel.app/)
 
 ---
 
-## ✨ Features
+## Features
 
 - **Interactive Canvas Background:** Dynamic plexus particle animation rendered on HTML5 Canvas.
 - **Custom Cursor & Spotlight Glow:** Interactive cursor ring and cursor-following ambient spotlight effect (desktop).
@@ -18,7 +18,7 @@ A modern, responsive, dark-mode developer portfolio showcasing web interfaces, f
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Core:** HTML5, Vanilla CSS3, JavaScript (ES6+)
 - **Animations:** GSAP (GreenSock), ScrollTrigger
@@ -28,7 +28,7 @@ A modern, responsive, dark-mode developer portfolio showcasing web interfaces, f
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Portfolio_Dhruv/
@@ -40,7 +40,7 @@ Portfolio_Dhruv/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project locally:
 
@@ -55,7 +55,7 @@ To run this project locally:
 
 ---
 
-## 📬 Contact & Socials
+## Contact & Socials
 
 - **Portfolio:** [my-portfolio-fd.vercel.app](https://my-portfolio-fd.vercel.app/)
 - **GitHub:** [@dhruvpatel012](https://github.com/dhruvpatel012)
