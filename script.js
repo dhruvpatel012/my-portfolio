@@ -362,33 +362,33 @@ document.addEventListener('DOMContentLoaded', () => {
     tl.from('.hero-badge', {
       opacity: 0,
       y: 20,
-      duration: 0.6,
+      duration: 0.5,
       ease: 'power3.out'
     })
     .from('.hero-title .title-line', {
-      y: 80,
+      y: 50,
       opacity: 0,
-      duration: 1.0,
-      stagger: 0.15,
-      ease: 'power4.out'
-    }, '-=0.4')
-    .from('.hero-subtitle', {
-      opacity: 0,
-      y: 25,
-      duration: 0.8,
+      duration: 0.75,
+      stagger: 0.12,
       ease: 'power3.out'
-    }, '-=0.6')
-    .from('.hero-actions .btn', {
+    }, '-=0.35')
+    .from('.hero-subtitle', {
       opacity: 0,
       y: 20,
       duration: 0.6,
-      stagger: 0.15,
       ease: 'power3.out'
     }, '-=0.5')
+    .from('.hero-actions .btn', {
+      opacity: 0,
+      y: 15,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: 'power3.out'
+    }, '-=0.4')
     .from('.hero-scroll-indicator', {
       opacity: 0,
       y: -10,
-      duration: 0.5,
+      duration: 0.4,
       ease: 'power3.out'
     }, '-=0.3');
   };
@@ -401,28 +401,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentVal >= 100) {
       clearInterval(loaderTimer);
       
-      const exitTimeline = gsap.timeline({
-        onComplete: initHeroAnimations
-      });
+      const exitTimeline = gsap.timeline();
       
-      exitTimeline.to('.loader-progress-wrap', {
+      exitTimeline.to('.loader-progress-wrap, .loader-name, .loader-track', {
         opacity: 0,
-        y: -10,
-        duration: 0.3,
+        y: -15,
+        duration: 0.25,
         ease: 'power2.in'
       })
-      .to('.loader-name, .loader-track', {
-        opacity: 0,
-        y: -20,
-        stagger: 0.1,
-        duration: 0.4,
-        ease: 'power2.in'
-      }, '-=0.15')
+      .call(initHeroAnimations, null, '+=0.05')
       .to(loader, {
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)',
-        duration: 0.8,
-        ease: 'power4.inOut'
-      }, '+=0.1')
+        duration: 0.55,
+        ease: 'power3.inOut'
+      }, '-=0.15')
       .set(loader, { display: 'none' });
     }
   }, stepTime);
